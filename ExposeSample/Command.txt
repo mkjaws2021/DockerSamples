@@ -1,0 +1,25 @@
+ls
+docker image ls
+docker build -t exposeapache:1.0 .
+vi Dockerfile 
+docker build -t exposeapache:1.0 .
+clear
+docker image ls
+docker container run -d -p 8080:80 --name myex1 exposeapache:1.0
+docker container run -d -p 8085:80 --name myex2 exposeapache:1.0
+clear
+cd ..
+git add .
+git status
+clear
+history | cut -c 8- 
+history | cut -c 8- | tail 8
+tail --hlep
+history | cut -c 8- | tail -c 8
+history | cut -c 8- | tail -n 8
+history | cut -c 8- | tail -n 15
+history | cut -c 8- | tail -n 25
+ls
+history | cut -c 8- | tail -n 25 > /ExponseSample/Command.txt
+history | cut -c 8- | tail -n 25 > /ExposeSample/Command.txt
+history | cut -c 8- | tail -n 25 > ./ExposeSample/Command.txt
