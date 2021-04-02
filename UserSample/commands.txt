@@ -1,0 +1,73 @@
+cl
+ear
+clear
+docker pull ubuntu:18:04
+docker pull ubuntu:18.04
+docker container run -it -P --name apache2 unbuntu:18.04 
+docker container run -it -P --name apache2 ubuntu:18.04 
+clear
+git clone https://github.com/mkjaws2021/DockerSamples.git
+clear
+ls
+cd DockerSamples/
+ls
+mkdir UserSample
+vi Dockerfile
+docker build -t userdemo:1 .
+docker image ls
+docker run -it --name userdemo userdemo:1 /bin/bash
+docker container ls
+vi Dockerfile 
+docker build -t userdemo:1 .
+docker run -it --name userdemo1 userdemo:1 /bin/bash
+clear
+ls
+cp Dockerfile /UserSample/Dockerfile
+ls
+cp -r Dockerfile /UserSample
+ls
+cd UserSample/
+ls
+ls
+cp -r Dockerfile /UserSample/
+cd ..
+cp -r Dockerfile /UserSample/
+ls
+mv Dockerfile ./UserSample/
+ls
+cd UserSample/
+ls
+ls -lat
+ls
+docker run -d --name userdemo2 userdemo:1 /bin/bash
+docker run --name userdemo3 userdemo:1
+docker container ls
+ls
+docker container ls -a
+docker container start userdemo3
+docker ps
+docker container ls
+docker container ls -a
+docker run -d --name userdemo4 userdemo:1
+docker container ls
+docker container ls -a
+vi Dockerfile 
+docker run -d --name userdemo4 userdemo:1 /bin/bash
+docker run -d --name userdemo5 userdemo:1 /bin/bash
+docker container ls
+docker container ls -a
+docker container prune -f
+docker container ls
+vi Dockerfile 
+Docker build -t myapache:1 .
+docker build -t myapache:1 .
+docker image ls
+docker container run myapache:1 
+docker container ls
+docker container run -d --name myapache1 myapache:1 sleep 1d
+docker container ls
+docker exec -it --user root myapache1 /bin/bash
+docker exec -it --user proxy  myapache1 /bin/bash
+history
+history | cut -c 8-
+history | cut -c 8- > commands.txt
