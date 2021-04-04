@@ -1,0 +1,205 @@
+clear
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+sudo usermod -aG docker ubuntu
+clear
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+clear
+git status
+sudo apt install git -y
+clear
+git status
+git --version
+git version
+clear
+git clone https://github.com/mkjaws2021/DockerSamples.git
+ls
+cd DockerSamples/
+ls
+mkdir Dockerd-composeSamples
+rm Dockerd-composeSamples/
+rm -r Dockerd-composeSamples/
+mkdir Docker-composeSamples
+cd Docker-composeSamples/
+ls
+clear
+mkdir Helloworlddemo buildcomposedemo networkvoldemo
+ls
+cd Helloworlddemo/
+vi docker-compose.yaml
+nano docker-compose.yaml
+docker-componse -help
+docker-compose -help
+docker-compose -config
+docker-compose --config
+docker-compose config
+vi docker-compose.yaml 
+docker-compose config
+docker-compose build
+exit
+clear
+ls
+cd DockerSamples/
+ls
+cd Docker-composeSamples/
+ls
+cd Helloworlddemo/
+ls
+docker-compose build
+docker image ls
+docker-componse up --help
+docker-compone up --help
+docker-compose up --help
+clear
+docker-compose up -d
+docker image ls
+docker container ls
+docker service ls
+curl http://localhost:80
+curl http://localhost:8080
+clear
+ls
+cd../..
+cd  ../..
+ls
+git add .
+git commit -m "Added Dockercompose samples"
+git config --global "user.email"="mkj.aws2021@gmail.com"
+git config --global "user.name"="mkjaws2021"
+git config --global "user"="mkjaws2021"
+git config --help
+git commit -m "Added Dockercompose samples"
+git push origin main
+git status
+git diff origin main
+clear
+ls
+cd Docker-composeSamples/
+ls
+cd networkvoldemo/
+cd ..
+cd build
+cd buildcomposedemo/
+ls
+touch docker-compose.yaml
+mkdir gol spc
+touch ./gol/Dockerfile ./spc/Dockerfile
+nano docker-compose.yaml 
+cd gol
+nano Dockerfile 
+cd ..
+cd spc/
+nano Dockerfile 
+cd ..
+docker-compose config
+vi docker-compose.yaml 
+docker-compose config
+docker-compose build -d
+docker-compose build
+vi ./gol/Dockerfile 
+docker-compose up -d
+vi ./gol/Dockerfile 
+docker-compose build 
+docker image ls
+docker container ls
+docker container rm - f $(docker container ls -aq)
+docker-compose down
+docker container ls
+docker-compose --help
+docker-compose down .
+cd ..
+cd hell
+cd Helloworlddemo/
+ls
+docker-compose down .
+docker-compose down 
+docker-compose ls
+docker container ls
+clear
+cd ..
+cd buildcomposedemo/
+ls
+docker image ls
+docker-compose up -d
+docker container ls
+docker container ls -a
+vi ./spc/Dockerfile 
+docker-compose build 
+docker-compose down 
+docker-compose up
+docker container ls
+clera
+clear
+docker-compose up -d
+docker container ls
+vi ./gol/Dockerfile 
+docker-compose down
+docker-compse build 
+docker-compose build 
+clear
+docker-compose up -d
+docker container ls
+curl http://localhost:80
+curl http://localhost:8080
+vi docker-compose.yaml 
+docker-compose down -d
+docker-compose down 
+clear
+docker-compose build 
+vi docker-compose.yaml 
+docker-compose build 
+docker-compose up -d
+docker container ls
+curl http://localhost:8080
+curl http://localhost:8080/gameoflife
+curl http://localhost:8081
+clear
+docker container ls
+vi ./gol/Dockerfile 
+docker-compose down
+docker-compose build
+docker-compose up -d
+docker container ls
+curl http://localhost:8080/gameoflife
+vi docker-compose.yaml 
+docker-compose down
+docker-compose build
+docker-compose up -d
+curl http://localhost:8080/gameoflife
+curl http://localhost:8081
+docker container ls
+curl http://localhost:8080
+curl http://localhost:8081
+curl http://localhost:8080/gameoflife
+curl http://localhost:8080/gameoflife/
+clear
+docker-compose down
+cd ..
+cp -r ./buildcomposedemo/ ./networkvoldemo/
+cd networkvoldemo/
+ls
+cd ..
+cp -r ./buildcomposedemo/* ./networkvoldemo/
+ls ./networkvoldemo/
+cd networkvoldemo/
+rm buildcomposedemo/
+rm -r buildcomposedemo/
+ls
+vi docker-compose.yaml 
+nano docker-compose.yaml 
+docker-compose config
+docker container ls
+docker-compose build 
+docker-compose up -d
+docker contaienr ls
+docker container ls
+docker volume ls
+ls
+docker network ls
+docker inpsect networkvoldemo_spc_1
+docker inspect networkvoldemo_spc_1
+cd ..
+history | cut -c 8-
+history | cut -c 8- > ./Docker-composeSamples/dockercomposecmds.txt
