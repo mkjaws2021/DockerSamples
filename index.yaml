@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  mycustomchart:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-03-15T08:02:40.5924057+05:30"
+    digest: 7d1d155d4e09212a0308bf26214db4516e1972d79197db903e24392f6ef2695a
+    name: mycustomchart
+    type: application
+    urls:
+    - mycustomchart-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-03-15T08:02:40.5893896+05:30"
