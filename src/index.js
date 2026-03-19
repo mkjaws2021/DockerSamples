@@ -15,6 +15,6 @@ app.listen(port, () => {
 });
 
 app.get('/',(req,res) => {
-    res.send(`Hello Project`)
+    res.send(`Hello Project through Dockerfile ${process.env.NODE_ENV}`)
 });
 

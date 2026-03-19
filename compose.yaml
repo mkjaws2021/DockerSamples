@@ -1,13 +1,21 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      target: development
     ports:
       - "3000:3000"
     environment:
       - PORT=3000
       - NODE_ENV=development
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+    networks:
+      - config-store-net
     command: npm run dev
-    volumes:
-      - ./src:/app/src
-      - /app/node_modules
 
+networks:
+  config-store-net:
