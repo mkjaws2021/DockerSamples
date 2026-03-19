@@ -1,0 +1,6 @@
+1. add a Readme.md file ,gitignore and MIT license file 
+2. inititalise the project using npm init -y 
+3. create file Dockerfile, .dockerignore, compose.yaml  and src folder 
+4. install npm dependencies for express@4.21.1 , sequelize@6.37.5, pg@8.13.1, pg-hstore@2.3.4, body-parser@1.20.3 cors@2.8.5 with saveexact option
+5. install npm dev dependencies with save-exact option for module nodemon@3.1.7
+6. add related files into .dockerignore file 

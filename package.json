@@ -1,0 +1,25 @@
+{
+  "name": "dockersamples",
+  "version": "1.0.0",
+  "description": "Node.js + Express app with Sequelize and PostgreSQL, containerized with Docker.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "1.20.3",
+    "cors": "2.8.5",
+    "express": "4.21.1",
+    "pg-hstore": "2.3.4",
+    "sequelize": "6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.7"
+  }
+}

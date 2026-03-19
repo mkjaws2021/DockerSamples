@@ -1,0 +1,13 @@
+# This file controls what gets sent to Docker during `docker build`.
+
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.git
+.github
+.vscode
+.DS_Store
+
+
