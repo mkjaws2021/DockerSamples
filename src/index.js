@@ -2,12 +2,18 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const db = require("./db")
+const apiRouter = require("./routes")
 
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/api',apiRouter);
+
+app.get('/',(req,res) => { 
+    res.send('My Nj Project');
+});
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const port = process.env.PORT || 3000;
