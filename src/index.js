@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const db = require("./db")
 
 
 const app = express();
@@ -10,11 +11,22 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on ${port}`);
+
+
+db.authenticate()
+.then( () => {
+   console.log('Connected to postgresSQL');
+   return db.sync();
+})
+.then( () => {
+   console.log('Database synchronized, starting server.')
+   app.listen(port, () => {
+    console.log(`Server running on ${port}`);
+  });
+})
+.catch(err => {
+   console.error("Unable to connect to DB")
+   console.error(err)
 });
 
-app.get('/',(req,res) => {
-    res.send(`Hello Project through Dockerfile ${process.env.NODE_ENV}`)
-});
 
